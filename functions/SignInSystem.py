@@ -34,8 +34,7 @@ def signinsystem(just_created_account, Bank, message, prompt, signed_in):
             message.update(pasword.encode())
             hashed_pasword = message
             DB(hashed_pasword,username,"r")
-            bank(hashed_pasword, username, just_created_account, Bank,
-                 signed_in)
+            bank(hashed_pasword, username, just_created_account,Bank,signed_in)
 
     else:
         bank(hashed_pasword, username, just_created_account, Bank, signed_in)
